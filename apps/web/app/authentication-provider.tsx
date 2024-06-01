@@ -10,10 +10,7 @@ import CrystalDialog from "./crystal-dialog";
 import PaymentDialog from "./crystals/payment-dialog";
 import { dark } from "@clerk/themes";
 
-const convex = new ConvexReactClient(
-  process.env.NEXT_PUBLIC_CONVEX_URL as string,
-);
-console.log(process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, 22222);
+const convex = new ConvexReactClient("https://cheery-shrimp-818.convex.cloud");
 
 export function AuthenticationProvider({
   children,
@@ -26,7 +23,7 @@ export function AuthenticationProvider({
       publishableKey={
         process.env.NODE_ENV === "development"
           ? "pk_test_Y2hlZXJmdWwtZ29hdC00NS5jbGVyay5hY2NvdW50cy5kZXYk"
-          : process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+          : "pk_test_Y2hlZXJmdWwtZ29hdC00NS5jbGVyay5hY2NvdW50cy5kZXYk"
       }
       appearance={{
         baseTheme: resolvedTheme === "dark" ? dark : undefined,
