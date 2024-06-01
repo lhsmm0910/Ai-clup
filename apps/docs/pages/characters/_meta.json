@@ -1,0 +1,9 @@
+{
+  "name": "Name",
+  "greeting": "Greeting",
+  "description": "Description",
+  "instruction": "Instructions",
+  "visibility": "Visibility",
+  "character_card": "Character Card",
+  "help": "AI Character Generator"
+}
