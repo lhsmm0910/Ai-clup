@@ -13,7 +13,7 @@ import { dark } from "@clerk/themes";
 const convex = new ConvexReactClient(
   process.env.NEXT_PUBLIC_CONVEX_URL as string,
 );
-console.log(process.env.NEXT_PUBLIC_CONVEX_URL, 22222);
+console.log(process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY, 22222);
 
 export function AuthenticationProvider({
   children,
