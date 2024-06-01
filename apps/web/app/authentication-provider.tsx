@@ -20,11 +20,7 @@ export function AuthenticationProvider({
   const { resolvedTheme } = useTheme();
   return (
     <ClerkProvider
-      publishableKey={
-        process.env.NODE_ENV === "development"
-          ? "pk_test_Y2hlZXJmdWwtZ29hdC00NS5jbGVyay5hY2NvdW50cy5kZXYk"
-          : "pk_test_Y2hlZXJmdWwtZ29hdC00NS5jbGVyay5hY2NvdW50cy5kZXYk"
-      }
+      publishableKey="pk_test_Y2hlZXJmdWwtZ29hdC00NS5jbGVyay5hY2NvdW50cy5kZXYk"
       appearance={{
         baseTheme: resolvedTheme === "dark" ? dark : undefined,
         variables: {
