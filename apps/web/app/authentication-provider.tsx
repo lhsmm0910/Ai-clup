@@ -25,7 +25,7 @@ export function AuthenticationProvider({
       publishableKey={
         process.env.NODE_ENV === "development"
           ? "pk_test_bmF0aW9uYWwtbW9zcXVpdG8tMjUuY2xlcmsuYWNjb3VudHMuZGV2JA"
-          : process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+          : "https://cheery-shrimp-818.convex.cloud"
       }
       appearance={{
         baseTheme: resolvedTheme === "dark" ? dark : undefined,
