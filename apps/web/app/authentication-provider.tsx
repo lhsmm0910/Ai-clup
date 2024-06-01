@@ -13,6 +13,7 @@ import { dark } from "@clerk/themes";
 const convex = new ConvexReactClient(
   process.env.NEXT_PUBLIC_CONVEX_URL as string,
 );
+console.log(process.env.NEXT_PUBLIC_CONVEX_URL, 22222);
 
 export function AuthenticationProvider({
   children,
@@ -25,7 +26,7 @@ export function AuthenticationProvider({
       publishableKey={
         process.env.NODE_ENV === "development"
           ? "pk_test_bmF0aW9uYWwtbW9zcXVpdG8tMjUuY2xlcmsuYWNjb3VudHMuZGV2JA"
-          : "https://cheery-shrimp-818.convex.cloud"
+          : process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
       }
       appearance={{
         baseTheme: resolvedTheme === "dark" ? dark : undefined,
